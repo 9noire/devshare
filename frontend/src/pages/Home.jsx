@@ -67,7 +67,7 @@ export default function Home() {
           <div className="container mx-auto px-4 text-center">
             <div className="mb-6 font-mono text-gray-500 text-lg md:text-2xl tracking-wider h-10">
               <Typewriter
-                words={['> Welcome to Devshare']}
+                words={['> print("welcome dev!")']}
                 loop={0}
                 cursor
                 cursorStyle="|"
@@ -94,7 +94,7 @@ export default function Home() {
                 </Button>
               </Link>
               <Link to="/register">
-                <button className="px-10 py-4 text-lg font-medium border-2 border-black hover:bg-black hover:text-white transition rounded-md">
+                <button className="px-10 py-4 text-lg font-medium border-2 border-black hover:bg-black hover:text-white transition">
                   Daftar Gratis
                 </button>
               </Link>

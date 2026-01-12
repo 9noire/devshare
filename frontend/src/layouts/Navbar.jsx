@@ -41,11 +41,11 @@ function Navbar() {
               placeholder="Cari artikel..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="flex-1 px-4 py-2.5 border border-gray-400 focus:outline-none focus:border-black transition rounded-md text-sm"
+              className="flex-1 px-4 py-2.5 border border-gray-400 focus:outline-none focus:border-black transition text-sm"
             />
             <button
               type="submit"
-              className="px-5 py-2.5 bg-black text-white hover:bg-gray-800 transition rounded-md flex items-center justify-center"
+              className="px-5 py-2.5 bg-black text-white hover:bg-gray-800 transition flex items-center justify-center"
               aria-label="Cari"
             >
               <Search size={20} strokeWidth={1.5} />
