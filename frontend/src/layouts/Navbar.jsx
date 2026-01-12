@@ -16,7 +16,7 @@ function Navbar() {
   const handleSearch = (e) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      navigate(`/?search=${encodeURIComponent(searchQuery.trim())}`);
+      navigate(`/article?search=${encodeURIComponent(searchQuery.trim())}`);
       setSearchQuery('');
     }
   };
@@ -56,6 +56,9 @@ function Navbar() {
             <Link to="/" className="hover:text-gray-600 transition">
               Home
             </Link>
+            <Link to="/article" className="hover:text-gray-600 transition">
+              Article
+            </Link>
 
             {token ? (
               <>
@@ -63,7 +66,7 @@ function Navbar() {
                   Profile
                 </Link>
                 <Link to="/article/create" className="hover:text-gray-600 transition">
-                  Tulis
+                  Create
                 </Link>
                 <button
                   onClick={handleLogout}
